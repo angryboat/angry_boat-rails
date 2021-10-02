@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    angry_boat-rails (1.0.0)
+    angry_boat-rails (1.0.0.beta.pre.1)
 
 GEM
   remote: https://rubygems.org/
