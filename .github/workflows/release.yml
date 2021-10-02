@@ -14,3 +14,5 @@ jobs:
           ruby-version: 2.7
       - name:
         uses: angryboat/publish-gem@main
+        with:
+          github_token: ${{ secrets.GH_PACKAGE_TOKEN }}
