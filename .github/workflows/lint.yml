@@ -22,8 +22,7 @@ jobs:
           bundler-cache: true
       - name: Run security checks
         run: |
-          bin/bundler-audit --update
-          bin/brakeman -q -w2
+          bin/bundler-audit
       - name: Run linters
         run: |
-          bin/rubocop --parallel
+          bin/rubocop

@@ -6,7 +6,7 @@ on:
     branches: [main]
   workflow_dispatch: {}
 jobs:
-  run-lint:
+  run-rspec:
     strategy:
       matrix:
         ruby-version: [2.7, 3.0]

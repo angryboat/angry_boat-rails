@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in angry_boat-rails.gemspec
 gemspec
 
+gem 'bundler-audit', '~> 0.9.0', require: false
 gem 'pry', '~> 0.14.1'
 gem 'rake', '~> 13.0'
 gem 'rspec', '~> 3.0'
