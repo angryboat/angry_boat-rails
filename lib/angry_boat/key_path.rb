@@ -2,11 +2,7 @@
 
 module AngryBoat
   ##
-  # KeyPath provides a key path style array generation that can be used for things like dig.
-  #
-  # @example
-  #   { 'foo' => [{ bar: :baz }] }.dig(*AngryBoat::KeyPath.normlize('foo/[0]/:bar'))
-  #   # => :baz
+  # @private
   class KeyPath
     def self.normalize(key_path)
       key_path.split(%r{[./]}).map do |component|
@@ -16,5 +12,15 @@ module AngryBoat
         component
       end
     end
+  end
+
+  ##
+  # Provides a key path style array generation that can be used for things like dig.
+  #
+  # @example
+  #   { 'foo' => [{ bar: :baz }] }.dig(*AngryBoat.key_path('foo/[0]/:bar'))
+  #   # => :baz
+  def self.key_path(key_path)
+    AngryBoat::KeyPath.normalize(key_path)
   end
 end
