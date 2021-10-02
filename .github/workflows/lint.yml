@@ -18,7 +18,7 @@ jobs:
       - name: Setup Ruby and install gems
         uses: ruby/setup-ruby@v2
         with:
-          ruby-version: ${{ ruby-version }}
+          ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
       - name: Run security checks
         run: |
