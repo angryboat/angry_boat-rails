@@ -7,14 +7,14 @@ Gem::Specification.new do |spec|
   spec.version       = AngryBoat::VERSION
   spec.authors       = ['Maddie Schipper']
   spec.email         = ['maddie@angryboat.com']
+  spec.licence       = 'Unlicense'
 
   spec.summary       = 'AngryBoat Rails helper gem'
   spec.description   = ''
   spec.homepage      = 'https://github.com/angryboat/angry_boat-rails'
   spec.required_ruby_version = '>= 2.7.0'
 
-  spec.metadata['allowed_push_host'] = "TODO: Set to your gem server 'https://example.com'"
-
+  spec.metadata['allowed_push_host'] = "https://rubygems.pkg.github.com/angryboat"
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/angryboat/angry_boat-rails'
   spec.metadata['changelog_uri'] = 'https://github.com/angryboat/angry_boat-rails'
