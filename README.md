@@ -1,8 +1,6 @@
 # AngryBoat Rails
 
-[![Linters](https://github.com/angryboat/angry_boat-rails/actions/workflows/lint.yml/badge.svg)](https://github.com/angryboat/angry_boat-rails/actions/workflows/lint.yml)
-
-[![Unit Test](https://github.com/angryboat/angry_boat-rails/actions/workflows/test.yml/badge.svg)](https://github.com/angryboat/angry_boat-rails/actions/workflows/test.yml)
+[![Linters](https://github.com/angryboat/angry_boat-rails/actions/workflows/lint.yml/badge.svg)](https://github.com/angryboat/angry_boat-rails/actions/workflows/lint.yml) [![Unit Test](https://github.com/angryboat/angry_boat-rails/actions/workflows/test.yml/badge.svg)](https://github.com/angryboat/angry_boat-rails/actions/workflows/test.yml)
 
 ## Rubocop
 
