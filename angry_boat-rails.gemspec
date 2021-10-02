@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = AngryBoat::VERSION
   spec.authors       = ['Maddie Schipper']
   spec.email         = ['maddie@angryboat.com']
-  spec.licence       = 'Unlicense'
+  spec.license       = 'Unlicense'
 
   spec.summary       = 'AngryBoat Rails helper gem'
   spec.description   = ''
