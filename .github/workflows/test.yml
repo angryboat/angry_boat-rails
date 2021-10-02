@@ -1,4 +1,4 @@
-name: Linters
+name: Unit Test
 on:
   push:
     branches: [main]
@@ -9,7 +9,7 @@ jobs:
   run-lint:
     strategy:
       matrix:
-        ruby-version: [2.7]
+        ruby-version: [2.7, 3.0]
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
@@ -20,10 +20,6 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
-      - name: Run security checks
+      - name: Run RSpec
         run: |
-          bin/bundler-audit --update
-          bin/brakeman -q -w2
-      - name: Run linters
-        run: |
-          bin/rubocop --parallel
+          bundle exec rspec
