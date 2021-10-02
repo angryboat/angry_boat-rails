@@ -1,3 +1,6 @@
 # frozen_string_literal: true
 
-require 'angry_boat/rspec/model_sanity_examples' if defined?(::RSpec)
+if defined?(::RSpec)
+  require 'angry_boat/rspec/model_sanity_examples'
+  require 'angry_boat/rspec/graphql_example_group'
+end
