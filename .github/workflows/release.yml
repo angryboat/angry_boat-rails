@@ -18,4 +18,4 @@ jobs:
       - name:
         uses: angryboat/publish-gem@main
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_PACKAGE_TOKEN }}
