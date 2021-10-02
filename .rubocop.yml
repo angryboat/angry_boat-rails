@@ -1,0 +1,9 @@
+require:
+  - rubocop-rspec
+  - rubocop-rake
+
+inherit_from:
+  - ./rubocop/config.yml
+
+AllCops:
+  TargetRubyVersion: 2.7
