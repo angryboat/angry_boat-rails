@@ -12,6 +12,5 @@ jobs:
         with:
           bundler-cache: true
           ruby-version: 2.7
-      - name: Run Build
-        run: |
-          bundle exec rake build
+      - name:
+        uses: angryboat/publish-gem@main
