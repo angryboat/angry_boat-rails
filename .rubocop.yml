@@ -10,3 +10,7 @@ AllCops:
 
 Style/Documentation:
   Enabled: false
+
+Naming/FileName:
+  Exclude:
+    - lib/angry_boat-rails.rb
