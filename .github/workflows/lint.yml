@@ -1,0 +1,29 @@
+name: Linters
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch: {}
+jobs:
+  run-lint:
+    strategy:
+      matrix:
+        ruby-version: [2.7]
+        os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup Ruby and install gems
+        uses: ruby/setup-ruby@v2
+        with:
+          ruby-version: ${{ ruby-version }}
+          bundler-cache: true
+      - name: Run security checks
+        run: |
+          bin/bundler-audit --update
+          bin/brakeman -q -w2
+      - name: Run linters
+        run: |
+          bin/rubocop --parallel
