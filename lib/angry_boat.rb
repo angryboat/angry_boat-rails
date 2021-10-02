@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'angry_boat/key_path'
 require 'angry_boat/version'
 
 ##
