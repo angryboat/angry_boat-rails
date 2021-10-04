@@ -3,7 +3,6 @@ on:
   push:
     tags:
       - v*
-  workflow_dispatch: {}
 jobs:
   create-release:
     runs-on: ubuntu-latest
@@ -16,6 +15,6 @@ jobs:
           bundler-cache: true
           ruby-version: 2.7
       - name:
-        uses: angryboat/publish-gem@main
+        uses: dawidd6/action-publish-gem@v1
         with:
           github_token: ${{ secrets.GH_PACKAGE_TOKEN }}
